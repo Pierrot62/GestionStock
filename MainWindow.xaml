@@ -1,0 +1,32 @@
+﻿<Window x:Class="GestionStock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionStock"
+        mc:Ignorable="d"
+        Icon="/Stock.png"
+        Title="GESTION DE STOCK" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Gestion de stock" Grid.Column="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="24"/>
+        <Image Source="/Stock.png" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="article" Content="Gestion des Articles" Grid.Row="2" Grid.Column="1" Click="OpenFormSelect"/>
+        <Button x:Name="categorie" Content="Gestion des Categories" Grid.Row="2" Grid.Column="3" Click="OpenFormSelect"/>
+        <Button x:Name="typeProduit" Content="Gestion des Types Produits" Grid.Row="2" Grid.Column="5" Click="OpenFormSelect"/>
+    </Grid>
+</Window>
